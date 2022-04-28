@@ -1,9 +1,9 @@
 let startButton = document.getElementById('startButton'); 
 let gamePlay = document.getElementById('gamePlay'); 
+let exampleWord = document.getElementById('exampleWord')
 let wordInput = document.getElementById('answerWord')
-// import { words } from './words';
 let wordArray = words.split(" ");
-
+let outputTimer = document.getElementById('timer')
 
 
 
@@ -16,37 +16,54 @@ startButton.addEventListener('click', function(event) {
     // focus on word input
     wordInput.focus();
     // show random word
-    nextWord();
+    outputWord();
     // start the timer
+    timer(60);
+
+
 
 })
 
 
-function timer(params) {
-    
+function timer(seconds) {
+    let counter = seconds;
+    let interval = setInterval(() => {
+        outputTimer.textContent = counter
+        counter--;
+        if (counter < 0 ) {
+            clearInterval(interval);
+            outputTimer.textContent = "You're Time Is Up!"
+        }
+    }, 1000);
 }
 
-function scoreCount(params) {
-    
-}
 
-function getWord(params) {
+function getWord() {
     return wordArray[Math.floor(Math.random()*wordArray.length)];
+    
 }
 
-function nextWord (params) {
+function outputWord () {
     let word = getWord();
     exampleWord.textContent = word;
 }
 
-function letterCheck(params) {
+function nextWord() {
+
+}
+
+function letterCheck() {
     
 }
 
-function answerCheck(params) {
+function answerCheck() {
     
 }
 
-function emailScore(params) {
+function scoreCount() {
+    
+}
+
+function emailScore() {
     
 }
