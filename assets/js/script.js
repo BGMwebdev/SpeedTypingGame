@@ -1,8 +1,11 @@
-console.log("It Works!")
+let startButton = document.getElementById('startButton')
 
-function startGame(params) {
+
+startButton.addEventListener('click', function(event) {
+    event.preventDefault();
     
-}
+})
+
 
 function timer(params) {
     

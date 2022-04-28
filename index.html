@@ -12,12 +12,13 @@
         <H1>Speed Typing Game</H1>
         <div>?</div>
     </header>
-    <button class="start-button" id="startButton">Start</button>
+    <button class="start-button" id="startButton">Start Game</button>
     <div class="game-container">
         <div class="timer" id="timer">00:00</div>
         <div class="score" id="score">0</div>
         <div class="example-word" id="exampleWord">Word</div>
-        <textarea class="answer-word" id="answerWord">Word</textarea>
+        <input type="text" class="answer-word" id="answerWord" autocomplete="off" autofocus>Word</input>
+        <div class="end-game-container" id="endGameContainer"></div>
     </div>
     <footer>
         <p>Created for Educational purpose</p>

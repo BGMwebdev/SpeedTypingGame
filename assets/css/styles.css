@@ -25,6 +25,10 @@ h1 {
     color: #ffe600;
 }
 
+.hide {
+    display: none;
+}
+
 .start-button {
     display: block;
 }
