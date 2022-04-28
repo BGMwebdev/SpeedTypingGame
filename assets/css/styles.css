@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-color: rgb(45, 4, 83);
+    background-color: #2d0453;
     position: relative;
     display: flex;
     align-items: center;
@@ -25,14 +25,30 @@ h1 {
     color: #ffe600;
 }
 
-.game-container {
-    color: #ffe600;
+.start-button {
     display: block;
-    text-align: center;
 }
 
-.game-container div, .answer-box {
+.game-container {
+    color: #2d0453;
+    background-color: #ffe600;
     display: block;
+    text-align: center;
+    
+}
+
+.game-container div, .answer-word {
+    display: block;
+}
+
+.example-word {
+    color: #2d0453;
+    background-color: #f9ed86;
+    border: 1px solid #2d0453;
+}
+
+.answer-word {
+    background-color: #f9ed86;
 }
 
 footer {
