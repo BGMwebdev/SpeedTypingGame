@@ -18,13 +18,32 @@ startButton.addEventListener('click', function(event) {
     // show random word
     outputWord();
     // start the timer
-    timer(60);
+    timer(59);
 
 
 
 })
 
 
+/**
+ * get random word from array of 6 letter words
+ */
+function getWord() {
+    return wordArray[Math.floor(Math.random()*wordArray.length)];
+    
+}
+
+/**
+ * set text content of div with id of exampleWord to random word
+ */
+function outputWord () {
+    let word = getWord();
+    exampleWord.textContent = word;
+}
+
+/**
+ * create timer to countdown back from 60, log to div with id of timer 
+ */
 function timer(seconds) {
     let counter = seconds;
     let interval = setInterval(() => {
@@ -35,17 +54,6 @@ function timer(seconds) {
             outputTimer.textContent = "You're Time Is Up!"
         }
     }, 1000);
-}
-
-
-function getWord() {
-    return wordArray[Math.floor(Math.random()*wordArray.length)];
-    
-}
-
-function outputWord () {
-    let word = getWord();
-    exampleWord.textContent = word;
 }
 
 function nextWord() {
