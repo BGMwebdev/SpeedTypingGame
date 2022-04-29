@@ -1,5 +1,5 @@
-let startButton = document.getElementById('startButton'); 
-let gamePlay = document.getElementById('gamePlay'); 
+let startButton = document.getElementById('startButton');
+let gamePlay = document.getElementById('gamePlay');
 let exampleWord = document.getElementById('exampleWord')
 let wordInput = document.getElementById('answerWord')
 let wordArray = words.split(" ");
@@ -7,9 +7,9 @@ let outputTimer = document.getElementById('timer')
 
 
 /**
- * 
+ * click event to start the game, render a word, start the timer and hide button.
  */
-startButton.addEventListener('click', function(event) {
+startButton.addEventListener('click', function (event) {
     event.preventDefault();
     // hide start button
     startButton.className = 'hide';
@@ -24,6 +24,9 @@ startButton.addEventListener('click', function(event) {
     timer(59);
 })
 
+/**
+ * on input the lettercheck function will be activated
+ */
 wordInput.addEventListener('input', letterCheck);
 
 
@@ -33,7 +36,7 @@ wordInput.addEventListener('input', letterCheck);
  * get random word from array of 6 letter words
  */
 function getWord() {
-    return wordArray[Math.floor(Math.random()*wordArray.length)];
+    return wordArray[Math.floor(Math.random() * wordArray.length)];
 }
 
 /**
@@ -60,14 +63,15 @@ function timer(seconds) {
     let interval = setInterval(() => {
         outputTimer.textContent = counter
         counter--;
-        if (counter < 0 ) {
+        if (counter < 0) {
             clearInterval(interval);
             outputTimer.textContent = "You're Time Is Up!"
         }
     }, 1000);
 }
 /**
- * Compare the example word with the typed input and show correct or incorrect while typing
+ * Compare the example word with the typed input and show correct or incorrect while typing. 
+ * When the word is green, a new word will be rendered
  */
 function letterCheck() {
     // get all spans of the example word and compare with input value
@@ -87,31 +91,31 @@ function letterCheck() {
         else if (character === characterSpan.innerText) {
             characterSpan.classList.add('correct');
             characterSpan.classList.remove('incorrect');
-        // if it's typed incorrect, it shows red
+            // if it's typed incorrect, it shows red
         } else {
             characterSpan.classList.remove('correct');
             characterSpan.classList.add('incorrect');
-            correct =  false
+            correct = false
         }
-    }); 
+    });
     // If the correct answer is given, this renders a new word
-    if(correct) {
+    if (correct) {
         renderNewWord();
     }
 }
 
 function answerCheck() {
-    
+
 }
 
 function scoreCount() {
-    
+
 }
 
 function endGame() {
-    
+
 }
 
 function emailScore() {
-    
+
 }
