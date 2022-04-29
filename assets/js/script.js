@@ -6,7 +6,9 @@ let wordArray = words.split(" ");
 let outputTimer = document.getElementById('timer')
 
 
-
+/**
+ * 
+ */
 startButton.addEventListener('click', function(event) {
     event.preventDefault();
     // hide start button
@@ -71,12 +73,15 @@ function letterCheck() {
     // get all spans of the example word and compare with input value
     let arrayWord = exampleWord.querySelectorAll('span')
     let arrayValue = wordInput.value.split('')
+
+    let correct = true
     arrayWord.forEach((characterSpan, index) => {
         let character = arrayValue[index];
         // If it's not typed, it shows no coloring
         if (character == null) {
             characterSpan.classList.remove('incorrect');
             characterSpan.classList.remove('correct');
+            correct = false
         }
         // if it's typed correct, it shows green
         else if (character === characterSpan.innerText) {
@@ -86,8 +91,13 @@ function letterCheck() {
         } else {
             characterSpan.classList.remove('correct');
             characterSpan.classList.add('incorrect');
+            correct =  false
         }
-    })
+    }); 
+    // If the correct answer is given, this renders a new word
+    if(correct) {
+        renderNewWord();
+    }
 }
 
 function answerCheck() {
