@@ -16,12 +16,10 @@ startButton.addEventListener('click', function(event) {
     // focus on word input
     wordInput.focus();
     // show random word
-    outputWord();
+    // outputWord();
+    renderNewWord();
     // start the timer
     timer(59);
-
-
-
 })
 
 
@@ -30,15 +28,22 @@ startButton.addEventListener('click', function(event) {
  */
 function getWord() {
     return wordArray[Math.floor(Math.random()*wordArray.length)];
-    
 }
 
 /**
  * set text content of div with id of exampleWord to random word
  */
-function outputWord () {
-    let word = getWord();
-    exampleWord.textContent = word;
+async function renderNewWord() {
+    let word = await getWord();
+    exampleWord.innerText = ''
+    // create a span for each individual character
+    word.split('').forEach(character => {
+        let characterSpan = document.createElement('span');
+        characterSpan.innerText = character
+        exampleWord.appendChild(characterSpan)
+    });
+    // make sure word input is cleared
+    wordInput.value = null
 }
 
 /**
@@ -56,10 +61,6 @@ function timer(seconds) {
     }, 1000);
 }
 
-function nextWord() {
-
-}
-
 function letterCheck() {
     
 }
@@ -69,6 +70,14 @@ function answerCheck() {
 }
 
 function scoreCount() {
+    
+}
+
+// function renderNewWord() {
+
+// }
+
+function endGame() {
     
 }
 
