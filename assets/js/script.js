@@ -22,6 +22,10 @@ startButton.addEventListener('click', function(event) {
     timer(59);
 })
 
+wordInput.addEventListener('input', letterCheck);
+
+
+
 
 /**
  * get random word from array of 6 letter words
@@ -62,7 +66,26 @@ function timer(seconds) {
 }
 
 function letterCheck() {
-    
+    // get all spans of the example word
+    let arrayWord = exampleWord.querySelectorAll('span')
+    let arrayValue = wordInput.value.split('')
+    arrayWord.forEach((characterSpan, index) => {
+        let character = arrayValue[index];
+        // If it's not typed, it shows no coloring
+        if (character == null) {
+            characterSpan.classList.remove('incorrect');
+            characterSpan.classList.remove('correct');
+        }
+        // if it's typed correct, it shows green
+        else if (character === characterSpan.innerText) {
+            characterSpan.classList.add('correct');
+            characterSpan.classList.remove('incorrect');
+        // if it's typed incorrect, it show red
+        } else {
+            characterSpan.classList.remove('correct');
+            characterSpan.classList.add('incorrect');
+        }
+    })
 }
 
 function answerCheck() {
@@ -72,10 +95,6 @@ function answerCheck() {
 function scoreCount() {
     
 }
-
-// function renderNewWord() {
-
-// }
 
 function endGame() {
     

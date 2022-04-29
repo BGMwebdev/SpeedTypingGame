@@ -55,6 +55,15 @@ h1 {
     background-color: #f9ed86;
 }
 
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
+
 footer {
     position: absolute;
     bottom: 0;
