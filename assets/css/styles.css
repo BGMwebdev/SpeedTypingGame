@@ -9,6 +9,7 @@ body {
     background-color: #2d0453;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -23,6 +24,7 @@ header {
 
 h1 {
     color: #ffe600;
+    padding: 20px;
 }
 
 .hide {
@@ -30,25 +32,36 @@ h1 {
 }
 
 .start-button {
-    display: block;
+    position: absolute;
+    width: 120px;
+    height: 50px;
+
 }
 
 .game-container {
     color: #2d0453;
     background-color: #ffe600;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 1.5rem;
     text-align: center;
-    
 }
 
-.game-container div, .answer-word {
+.answer-word {
     display: block;
+    width: 90%;
+    text-align: center;
 }
 
 .example-word {
     color: #2d0453;
     background-color: #f9ed86;
     border: 1px solid #2d0453;
+    width: 90%;
 }
 
 .answer-word {
@@ -56,7 +69,7 @@ h1 {
 }
 
 .correct {
-    color: green;
+    color: rgb(4, 164, 4);
 }
 
 .incorrect {
@@ -69,4 +82,8 @@ footer {
     bottom: 0;
     color: #ffe600;
     text-align: center;
+}
+
+footer p {
+    padding: 20px;
 }

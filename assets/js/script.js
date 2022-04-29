@@ -64,9 +64,11 @@ function timer(seconds) {
         }
     }, 1000);
 }
-
+/**
+ * Compare the example word with the typed input and show correct or incorrect while typing
+ */
 function letterCheck() {
-    // get all spans of the example word
+    // get all spans of the example word and compare with input value
     let arrayWord = exampleWord.querySelectorAll('span')
     let arrayValue = wordInput.value.split('')
     arrayWord.forEach((characterSpan, index) => {
@@ -80,7 +82,7 @@ function letterCheck() {
         else if (character === characterSpan.innerText) {
             characterSpan.classList.add('correct');
             characterSpan.classList.remove('incorrect');
-        // if it's typed incorrect, it show red
+        // if it's typed incorrect, it shows red
         } else {
             characterSpan.classList.remove('correct');
             characterSpan.classList.add('incorrect');
