@@ -4,6 +4,7 @@ let exampleWord = document.getElementById('exampleWord')
 let wordInput = document.getElementById('answerWord')
 let wordArray = words.split(" ");
 let outputTimer = document.getElementById('timer')
+let score = document.getElementById('score')
 
 
 /**
@@ -98,9 +99,10 @@ function letterCheck() {
             correct = false
         }
     });
-    // If the correct answer is given, this renders a new word
+    // If the correct answer is given, completely green, this renders a new word
     if (correct) {
         renderNewWord();
+        scoreCount();
     }
 }
 
@@ -109,7 +111,8 @@ function answerCheck() {
 }
 
 function scoreCount() {
-
+    let oldScore = score.innerText;
+    score.innerText = ++oldScore;
 }
 
 function endGame() {
