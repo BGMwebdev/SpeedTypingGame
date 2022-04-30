@@ -7,6 +7,7 @@ let outputTimer = document.getElementById('timer')
 let score = document.getElementById('score')
 
 
+
 /**
  * click event to start the game, render a word, start the timer and hide button.
  */
@@ -14,8 +15,6 @@ startButton.addEventListener('click', function (event) {
     event.preventDefault();
     // hide start button
     startButton.className = 'hide';
-    // show gameplay
-    // ?????? figure out how to hide the gameplay untill start-button is pushed
     // focus on word input
     wordInput.focus();
     // show random word
@@ -26,12 +25,9 @@ startButton.addEventListener('click', function (event) {
 })
 
 /**
- * on input the lettercheck function will be activated
+ * on input the wordCheck function will be activated
  */
-wordInput.addEventListener('input', letterCheck);
-
-
-
+wordInput.addEventListener('input', wordCheck);
 
 /**
  * get random word from array of 6 letter words
@@ -45,15 +41,15 @@ function getWord() {
  */
 async function renderNewWord() {
     let word = await getWord();
-    exampleWord.innerText = ''
+    exampleWord.innerText = '';
     // create a span for each individual character
-    word.split('').forEach(character => {
+    word.split('').forEach(function(character) {
         let characterSpan = document.createElement('span');
         characterSpan.innerText = character
         exampleWord.appendChild(characterSpan)
     });
     // make sure word input is cleared
-    wordInput.value = null
+    wordInput.value = '';
 }
 
 /**
@@ -61,26 +57,27 @@ async function renderNewWord() {
  */
 function timer(seconds) {
     let counter = seconds;
-    let interval = setInterval(() => {
+    let interval = setInterval(function() {
         outputTimer.textContent = counter
         counter--;
         if (counter < 0) {
             clearInterval(interval);
             outputTimer.textContent = "You're Time Is Up!"
         }
-    }, 1000);
+    }, 1000)
 }
+
 /**
  * Compare the example word with the typed input and show correct or incorrect while typing. 
  * When the word is green, a new word will be rendered
  */
-function letterCheck() {
+function wordCheck() {
     // get all spans of the example word and compare with input value
     let arrayWord = exampleWord.querySelectorAll('span')
     let arrayValue = wordInput.value.split('')
 
     let correct = true
-    arrayWord.forEach((characterSpan, index) => {
+    arrayWord.forEach(function(characterSpan, index) {
         let character = arrayValue[index];
         // If it's not typed, it shows no coloring
         if (character == null) {
@@ -104,10 +101,6 @@ function letterCheck() {
         renderNewWord();
         scoreCount();
     }
-}
-
-function answerCheck() {
-
 }
 
 function scoreCount() {
