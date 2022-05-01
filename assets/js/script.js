@@ -1,3 +1,4 @@
+let startGame = document.getElementById('startGame')
 let startButton = document.getElementById('startButton');
 let gamePlay = document.getElementById('gamePlay');
 let exampleWord = document.getElementById('exampleWord');
@@ -8,19 +9,16 @@ let score = document.getElementById('score');
 
 
 
+// click event and keydown event to active start game
+startGame.addEventListener('click', playGame, false); 
+startGame.addEventListener('keydown', playGame, false);
 /**
  * click event and keyup event to start the game, render a word, start the timer and hide button.
  */
-startButton.addEventListener('click', handler, false); 
-startButton.addEventListener('keydown', handler, false);
-
-// addEventListener("keydown", function(event)
-// document.getElementById("answer-box").focus();
-
-function handler(event) {
+function playGame(event) {
     event.preventDefault();
     // hide start button
-    startButton.className = 'hide';
+    startGame.className = 'hide';
     // focus on word input
     wordInput.focus();
     // show random word
@@ -30,9 +28,8 @@ function handler(event) {
     timer(59);
 }
 
-/**
- * on input the wordCheck function will be activated
- */
+
+//  on input the wordCheck function will be activated
 wordInput.addEventListener('input', wordCheck);
 
 /**
@@ -51,24 +48,24 @@ async function renderNewWord() {
     // create a span for each individual character
     word.split('').forEach(function(character) {
         let characterSpan = document.createElement('span');
-        characterSpan.innerText = character
-        exampleWord.appendChild(characterSpan)
+        characterSpan.innerText = character;
+        exampleWord.appendChild(characterSpan);
     });
     // make sure word input is cleared
     wordInput.value = '';
 }
 
 /**
- * create timer to countdown back from 60, log to div with id of timer 
+ * set timer to countdown back from 60 and render in display of timer 
  */
 function timer(seconds) {
     let counter = seconds;
     let interval = setInterval(function() {
-        outputTimer.textContent = counter
+        outputTimer.textContent = counter;
         counter--;
         if (counter < 0) {
             clearInterval(interval);
-            outputTimer.textContent = "You're Time Is Up!"
+            outputTimer.textContent = "You're Time Is Up!";
         }
     }, 1000)
 }
@@ -79,17 +76,18 @@ function timer(seconds) {
  */
 function wordCheck() {
     // get all spans of the example word and compare with input value
-    let arrayWord = exampleWord.querySelectorAll('span')
-    let arrayValue = wordInput.value.split('')
+    let arrayWord = exampleWord.querySelectorAll('span');
+    let arrayValue = wordInput.value.split('');
+    let correct = true;
 
-    let correct = true
     arrayWord.forEach(function(characterSpan, index) {
         let character = arrayValue[index];
+
         // If it's not typed, it shows no coloring
         if (character == null) {
             characterSpan.classList.remove('incorrect');
             characterSpan.classList.remove('correct');
-            correct = false
+            correct = false;
         }
         // if it's typed correct, it shows green
         else if (character === characterSpan.innerText) {
@@ -99,7 +97,7 @@ function wordCheck() {
         } else {
             characterSpan.classList.remove('correct');
             characterSpan.classList.add('incorrect');
-            correct = false
+            correct = false;
         }
     });
     // If the correct answer is given, completely green, this renders a new word
