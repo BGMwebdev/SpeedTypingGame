@@ -123,6 +123,12 @@ header div {
     text-align: center;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
 footer {
     position: absolute;
     bottom: 0;
