@@ -18,13 +18,23 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
+    padding: 20px;
     height: fit-content;
     text-align: center;
 }
 
 h1 {
     color: #ffe600;
-    padding: 20px;
+    display: inline;
+    margin-left: 20px;    
+}
+
+header div {
+    color: #ffe600;
+    font-size: xx-large;
+    display: inline;
+    float: right;
+    margin-right: 20px;
 }
 
 .hide {

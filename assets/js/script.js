@@ -11,7 +11,13 @@ let score = document.getElementById('score');
 
 // click event and keydown event to active start game
 startGame.addEventListener('click', playGame, false); 
-startGame.addEventListener('keydown', playGame, false);
+startButton.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        playGame();
+    }
+});
+
+
 /**
  * click event and keyup event to start the game, render a word, start the timer and hide button.
  */
