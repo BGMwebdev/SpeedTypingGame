@@ -13,25 +13,29 @@ let emailSubmit = document.getElementById('submitEmail')
 
 
 // click event and keydown event to activate start game
-startGame.addEventListener('click', playGame, false);
+startButton.addEventListener('click', playGame);
 
 startButton.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         playGame();
-    }
+    };
 });
 
 //  on input the wordCheck function will be activated
 wordInput.addEventListener('input', wordCheck);
 
+
+
+
 // click event and keydown event to submit email
-emailSubmit.addEventListener('click', submitEmail, false);
+emailSubmit.addEventListener('click', submitEmail);
 
 emailSubmit.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         submitEmail();
     }
 });
+
 
 
 
@@ -55,7 +59,7 @@ function playGame(event) {
 
 
 /**
- * get random word from array of 6 letter words
+ * get random word from string of 6 letter words in words.js
  */
 function getWord() {
     return wordArray[Math.floor(Math.random() * wordArray.length)];
@@ -137,8 +141,8 @@ function endGame() {
     wordInput.blur();
     gamePlay.className = 'hide'
     gameOutcome.textContent = `Congratulations!!! Your score is ${document.getElementById('score').innerText}`;
-    textOutcome.textContent = 'If you would like your score to be send to you, place enter your emailaddress:';
-    emailBox.focus();
+    textOutcome.textContent = 'If you would like your score to be send to you, please enter your name and email:';
+    // emailBox.focus();
 }
 
 function submitEmail() {

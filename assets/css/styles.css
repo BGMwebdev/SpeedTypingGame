@@ -6,7 +6,11 @@
 
 body {
     height: 100vh;
-    background-color: #2d0453;
+    background-image: url(../images/pexels-jess-bailey-designs-crop.jpg);
+    background-color: #ecf4df;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,13 +28,13 @@ header {
 }
 
 h1 {
-    color: #ffe600;
+    color: #807070;
     display: inline;
     margin-left: 20px;    
 }
 
 header div {
-    color: #ffe600;
+    color: #807070;
     font-size: xx-large;
     display: inline;
     float: right;
@@ -41,8 +45,8 @@ header div {
     display: none;
 }
 .start-game {
-    color: #2d0453;
-    background-color: #ffe600;
+    color: #ecf4df;
+    background-color: #807070;
     position: absolute;
     z-index: 1;
     display: flex;
@@ -58,7 +62,7 @@ header div {
 
 .start-game h2 {
     font-size: large;
-    color: #2d0453;
+    color: #ecf4df;
 }
 
 .start-button {
@@ -68,8 +72,8 @@ header div {
 }
 
 .game-container {
-    color: #2d0453;
-    background-color: #ffe600;
+    color: #ecf4df;
+    background-color: #807070;
     position: absolute;
     z-index: 0;
     display: flex;
@@ -89,14 +93,14 @@ header div {
 }
 
 .example-word {
-    color: #2d0453;
-    background-color: #f9ed86;
-    border: 1px solid #2d0453;
+    color: #ecf4df;
+    background-color: #807070;
+    border: 1px solid #ecf4df;
     width: 90%;
 }
 
 .answer-word {
-    background-color: #f9ed86;
+    background-color: #f7dada;
 }
 
 .correct {
@@ -109,8 +113,8 @@ header div {
 }
 
 .end-game-container {
-    color: #2d0453;
-    background-color: #ffe600;
+    color: #ecf4df;
+    background-color: #807070;
     position: absolute;
     z-index: -1;
     display: flex;
@@ -132,7 +136,7 @@ header div {
 footer {
     position: absolute;
     bottom: 0;
-    color: #ffe600;
+    color: #e2c6c6;
     text-align: center;
 }
 
