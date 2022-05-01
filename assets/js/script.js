@@ -6,12 +6,14 @@ let wordInput = document.getElementById('answerWord');
 let wordArray = words.split(' ');
 let outputTimer = document.getElementById('timer');
 let score = document.getElementById('score');
+let gameOutcome = document.getElementById('gameOutcome')
 
 
 
 // click event and keydown event to active start game
-startGame.addEventListener('click', playGame, false); 
-startButton.addEventListener("keydown", function(event) {
+startGame.addEventListener('click', playGame, false);
+
+startButton.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         playGame();
     }
@@ -31,7 +33,7 @@ function playGame(event) {
     // outputWord();
     renderNewWord();
     // start the timer
-    timer(59);
+    timer(10);
 }
 
 
@@ -52,7 +54,7 @@ async function renderNewWord() {
     let word = await getWord();
     exampleWord.innerText = '';
     // create a span for each individual character
-    word.split('').forEach(function(character) {
+    word.split('').forEach(function (character) {
         let characterSpan = document.createElement('span');
         characterSpan.innerText = character;
         exampleWord.appendChild(characterSpan);
@@ -66,12 +68,11 @@ async function renderNewWord() {
  */
 function timer(seconds) {
     let counter = seconds;
-    let interval = setInterval(function() {
+    let interval = setInterval(function () {
         outputTimer.textContent = counter;
         counter--;
         if (counter < 0) {
-            clearInterval(interval);
-            outputTimer.textContent = "You're Time Is Up!";
+            endGame();
         }
     }, 1000)
 }
@@ -86,7 +87,7 @@ function wordCheck() {
     let arrayValue = wordInput.value.split('');
     let correct = true;
 
-    arrayWord.forEach(function(characterSpan, index) {
+    arrayWord.forEach(function (characterSpan, index) {
         let character = arrayValue[index];
 
         // If it's not typed, it shows no coloring
@@ -119,9 +120,12 @@ function scoreCount() {
 }
 
 function endGame() {
-
+    wordInput.blur();
+    gamePlay.className = 'hide'
+    gameOutcome.textContent = `Congratulations!!! Your score is ${document.getElementById('score').innerText}`;
+    textOutcome.textContent = 'If you would like your score to be send to you, place enter your emailaddress:'
 }
 
 function emailScore() {
-
+''
 }
