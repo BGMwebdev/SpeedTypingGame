@@ -7,11 +7,12 @@ let wordArray = words.split(' ');
 let outputTimer = document.getElementById('timer');
 let score = document.getElementById('score');
 let gameOutcome = document.getElementById('gameOutcome')
-let emailBox = document.getElementById('email')
+let emailBox = document.getElementById('emailBox')
+let emailSubmit = document.getElementById('submitEmail')
 
 
 
-// click event and keydown event to active start game
+// click event and keydown event to activate start game
 startGame.addEventListener('click', playGame, false);
 
 startButton.addEventListener("keydown", function (event) {
@@ -19,6 +20,19 @@ startButton.addEventListener("keydown", function (event) {
         playGame();
     }
 });
+
+//  on input the wordCheck function will be activated
+wordInput.addEventListener('input', wordCheck);
+
+// click event and keydown event to submit email
+emailSubmit.addEventListener('click', submitEmail, false);
+
+emailSubmit.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        submitEmail();
+    }
+});
+
 
 
 /**
@@ -38,8 +52,7 @@ function playGame(event) {
 }
 
 
-//  on input the wordCheck function will be activated
-wordInput.addEventListener('input', wordCheck);
+
 
 /**
  * get random word from array of 6 letter words
@@ -128,6 +141,6 @@ function endGame() {
     emailBox.focus();
 }
 
-function emailSubmit() {
+function submitEmail() {
 
 }
