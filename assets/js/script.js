@@ -7,6 +7,7 @@ let wordArray = words.split(' ');
 let outputTimer = document.getElementById('timer');
 let score = document.getElementById('score');
 let gameOutcome = document.getElementById('gameOutcome')
+let emailBox = document.getElementById('email')
 
 
 
@@ -33,7 +34,7 @@ function playGame(event) {
     // outputWord();
     renderNewWord();
     // start the timer
-    timer(10);
+    timer(4);
 }
 
 
@@ -123,9 +124,10 @@ function endGame() {
     wordInput.blur();
     gamePlay.className = 'hide'
     gameOutcome.textContent = `Congratulations!!! Your score is ${document.getElementById('score').innerText}`;
-    textOutcome.textContent = 'If you would like your score to be send to you, place enter your emailaddress:'
+    textOutcome.textContent = 'If you would like your score to be send to you, place enter your emailaddress:';
+    emailBox.focus();
 }
 
-function emailScore() {
-''
+function emailSubmit() {
+
 }
