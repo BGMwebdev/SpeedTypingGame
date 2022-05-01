@@ -1,17 +1,23 @@
 let startButton = document.getElementById('startButton');
 let gamePlay = document.getElementById('gamePlay');
-let exampleWord = document.getElementById('exampleWord')
-let wordInput = document.getElementById('answerWord')
-let wordArray = words.split(" ");
-let outputTimer = document.getElementById('timer')
-let score = document.getElementById('score')
+let exampleWord = document.getElementById('exampleWord');
+let wordInput = document.getElementById('answerWord');
+let wordArray = words.split(' ');
+let outputTimer = document.getElementById('timer');
+let score = document.getElementById('score');
 
 
 
 /**
- * click event to start the game, render a word, start the timer and hide button.
+ * click event and keyup event to start the game, render a word, start the timer and hide button.
  */
-startButton.addEventListener('click', function (event) {
+startButton.addEventListener('click', handler, false); 
+startButton.addEventListener('keydown', handler, false);
+
+// addEventListener("keydown", function(event)
+// document.getElementById("answer-box").focus();
+
+function handler(event) {
     event.preventDefault();
     // hide start button
     startButton.className = 'hide';
@@ -22,7 +28,7 @@ startButton.addEventListener('click', function (event) {
     renderNewWord();
     // start the timer
     timer(59);
-})
+}
 
 /**
  * on input the wordCheck function will be activated
