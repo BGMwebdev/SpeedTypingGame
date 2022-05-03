@@ -36,9 +36,9 @@ h1 {
 
 header div {
     color: #FFFBDD;
-    font-size: xx-large;
+    font-size: large;
     display: block;
-    margin-right: 20px;
+    padding-top: 20px;
 }
 
 .hide {
@@ -54,7 +54,7 @@ header div {
     justify-content: space-evenly;
     align-items: center;
     width: 200px;
-    height: 200px;
+    height: 300px;
     border-radius: 1.5rem;
     text-align: center;
     
@@ -65,10 +65,19 @@ header div {
     color: #00369b;
 }
 
-.start-button {
+.button {
     width: 120px;
     height: 50px;
+    border: 1px solid #00369b;
+    border-radius: 1.1rem;
+    color: #00369b;
+    background-color: #baffba;
+    margin: 10px;
+    outline: none;
+}
 
+.button:hover {
+    background-color: #62fa62;
 }
 
 .game-container {
@@ -78,32 +87,34 @@ header div {
     z-index: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 200px;
-    height: 200px;
+    height: 300px;
     border-radius: 1.5rem;
     text-align: center;
 }
 
 .answer-word {
-    display: block;
     width: 90%;
     text-align: center;
+    outline: none;
+    color: #021e51;
+    background-color: #fffef6;
+    border: 1px solid #ffe313;
+    border-radius: .2rem;
+}
+
+.answer-word:focus {
+    border-color: #021e51;
 }
 
 .example-word {
-    color: #00369b;
-    background-color: #f7dada;
-    color: #807070;
-    border: 1px solid #807070;
+    color: #021e51;
+    border: 1px solid #ffe313;
+    border-radius: .2rem;
     width: 90%;
-}
-
-.answer-word {
-    background-color: #f7dada;
-    color: #807070;
-    border: 1px solid #807070;
+    background-color: #fffef6;
 }
 
 .correct {
@@ -125,7 +136,7 @@ header div {
     justify-content: space-evenly;
     align-items: center;
     width: 250px;
-    height: 250px;
+    height: 300px;
     border-radius: 1.5rem;
     text-align: center;
 }
@@ -134,6 +145,18 @@ header div {
     display: flex;
     flex-direction: column;
     width: 75%;
+    align-items: center;
+}
+
+.text-outcome {
+    margin: 10px;
+}
+
+.form-box {
+    background-color: #fffef6;
+    border: 1px solid #ffe313;
+    border-radius: .2rem;
+    text-align: center;
 }
 
 footer {

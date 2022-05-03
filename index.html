@@ -19,21 +19,21 @@
     </header>
     <div class="start-game" id="startGame">
         <h2>Press Enter to Start Game</h2>
-        <button class="start-button" id="startButton" autofocus>Start Game</button>
+        <button class="button" id="startButton" autofocus>Start Game</button>
     </div>
     <div class="game-container" id="gamePlay">
         <div class="timer" id="timer">5</div>
         <div class="score" id="score">0</div>
         <div class="example-word" id="exampleWord">Empty</div>
-        <input type="text" class="answer-word" id="answerWord" autocomplete="off"></input>
+        <input type="text" class="answer-word" id="answerWord" autocomplete="off">
     </div>
     <div class="end-game-container" id="endGameContainer">
-        <form action="" class="form" id="form">
-            <h3 class="game-outcome" id="gameOutcome"></h3>
+        <form action="POST" class="form" id="form">
+            <h3 class="game-outcome" id="gameOutcome">msg</h3>
             <p class="text-outcome" id="textOutcome"></p>
-            <input type="text" class="to-name" id="toName" placeholder="name">
-            <input type="email" id="emailBox" name="email" placeholder="email">
-            <button type="submit" class="submit" id="submitEmail">Send Score!</button>
+            <input type="text" class="form-box" id="toName" placeholder="name">
+            <input type="email" class="form-box" id="emailBox" name="email" placeholder="email">
+            <button type="submit" class="button" id="submitEmail">Send Score!</button>
         </form>
     </div>
     <footer>
