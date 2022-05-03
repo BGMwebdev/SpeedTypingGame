@@ -11,6 +11,21 @@ let emailBox = document.getElementById('emailBox');
 let emailSubmit = document.getElementById('submitEmail');
 
 
+let collapsible = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < collapsible.length; i++) {
+  collapsible[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
 
 // click event and keydown event to activate start game
 startButton.addEventListener('click', playGame);
