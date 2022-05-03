@@ -6,16 +6,16 @@
 
 body {
     height: 100vh;
-    background-image: url(../images/pexels-jess-bailey-designs-crop.jpg);
-    background-color: #ecf4df;
-    background-position: center; 
+    background-color:#00369B;
+    background-position: bottom; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 header {
@@ -28,16 +28,16 @@ header {
 }
 
 h1 {
-    color: #807070;
-    display: inline;
-    margin-left: 20px;    
+    color: #FFFBDD;
+    display: block;
+    margin-left: 20px;
+    font-size: 1.5rem;    
 }
 
 header div {
-    color: #807070;
+    color: #FFFBDD;
     font-size: xx-large;
-    display: inline;
-    float: right;
+    display: block;
     margin-right: 20px;
 }
 
@@ -45,8 +45,8 @@ header div {
     display: none;
 }
 .start-game {
-    color: #ecf4df;
-    background-color: #807070;
+    color: #00369b;
+    background-color: #FFFBDD;
     position: absolute;
     z-index: 1;
     display: flex;
@@ -62,7 +62,7 @@ header div {
 
 .start-game h2 {
     font-size: large;
-    color: #ecf4df;
+    color: #00369b;
 }
 
 .start-button {
@@ -72,8 +72,8 @@ header div {
 }
 
 .game-container {
-    color: #ecf4df;
-    background-color: #807070;
+    color: #00369b;
+    background-color: #FFFBDD;
     position: absolute;
     z-index: 0;
     display: flex;
@@ -93,14 +93,17 @@ header div {
 }
 
 .example-word {
-    color: #ecf4df;
-    background-color: #807070;
-    border: 1px solid #ecf4df;
+    color: #00369b;
+    background-color: #f7dada;
+    color: #807070;
+    border: 1px solid #807070;
     width: 90%;
 }
 
 .answer-word {
     background-color: #f7dada;
+    color: #807070;
+    border: 1px solid #807070;
 }
 
 .correct {
@@ -113,8 +116,8 @@ header div {
 }
 
 .end-game-container {
-    color: #ecf4df;
-    background-color: #807070;
+    color: #00369b;
+    background-color: #FFFBDD;
     position: absolute;
     z-index: -1;
     display: flex;
@@ -136,7 +139,7 @@ header div {
 footer {
     position: absolute;
     bottom: 0;
-    color: #e2c6c6;
+    color: #FFFBDD;
     text-align: center;
 }
 
