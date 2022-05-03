@@ -70,6 +70,7 @@ header div {
     height: 50px;
     border: 1px solid #00369b;
     border-radius: 1.1rem;
+    font-family: 'Chakra Petch', sans-serif;
     color: #00369b;
     background-color: #baffba;
     margin: 10px;
@@ -77,6 +78,10 @@ header div {
 }
 
 .button:hover {
+    background-color: #62fa62;
+}
+
+.button:focus {
     background-color: #62fa62;
 }
 
@@ -95,30 +100,55 @@ header div {
     text-align: center;
 }
 
+.timer {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.score {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.example-word {
+    margin-bottom: 10px;
+    padding: 8px;
+    color: #021e51;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1px solid #ffe313;
+    border-radius: .2rem;
+    width: 90%;
+    background-color: #fffef6;
+}
+
 .answer-word {
+    margin-bottom: 10px;
+    padding: 5px;
     width: 90%;
     text-align: center;
     outline: none;
     color: #021e51;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
     background-color: #fffef6;
     border: 1px solid #ffe313;
     border-radius: .2rem;
 }
 
 .answer-word:focus {
-    border-color: #021e51;
-}
-
-.example-word {
-    color: #021e51;
-    border: 1px solid #ffe313;
-    border-radius: .2rem;
-    width: 90%;
-    background-color: #fffef6;
+    border-color: #d1b900;
 }
 
 .correct {
-    color: rgb(4, 164, 4);
+    color: #02b502;
 }
 
 .incorrect {
@@ -153,6 +183,10 @@ header div {
 }
 
 .form-box {
+    margin-bottom: 5px;
+    color: #021e51;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1rem;
     background-color: #fffef6;
     border: 1px solid #ffe313;
     border-radius: .2rem;

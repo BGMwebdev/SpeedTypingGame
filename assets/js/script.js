@@ -1,4 +1,4 @@
-let startGame = document.getElementById('startGame')
+let startGame = document.getElementById('startGame');
 let startButton = document.getElementById('startButton');
 let gamePlay = document.getElementById('gamePlay');
 let exampleWord = document.getElementById('exampleWord');
@@ -6,9 +6,9 @@ let wordInput = document.getElementById('answerWord');
 let wordArray = words.split(' ');
 let outputTimer = document.getElementById('timer');
 let score = document.getElementById('score');
-let gameOutcome = document.getElementById('gameOutcome')
-let emailBox = document.getElementById('emailBox')
-let emailSubmit = document.getElementById('submitEmail')
+let gameOutcome = document.getElementById('gameOutcome');
+let emailBox = document.getElementById('emailBox');
+let emailSubmit = document.getElementById('submitEmail');
 
 
 
@@ -52,7 +52,7 @@ function playGame(event) {
     // outputWord();
     renderNewWord();
     // start the timer
-    timer(4);
+    timer(9);
 }
 
 
@@ -90,6 +90,7 @@ function timer(seconds) {
         outputTimer.textContent = counter;
         counter--;
         if (counter < 0) {
+            clearInterval(interval)
             endGame();
         }
     }, 1000)
