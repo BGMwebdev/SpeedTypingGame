@@ -116,7 +116,7 @@ function wordCheck() {
             correct = false;
         }
         // if it's typed correct, it shows green
-        else if (character === characterSpan.innerText) {
+        else if (character.toLowerCase() === characterSpan.innerText.toLowerCase()) {
             characterSpan.classList.add('correct');
             characterSpan.classList.remove('incorrect');
             // if it's typed incorrect, it shows red
