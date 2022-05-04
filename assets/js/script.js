@@ -11,12 +11,6 @@ let gameOutcome = document.getElementById('gameOutcome');
 let emailBox = document.getElementById('emailBox');
 let emailSubmit = document.getElementById('submitEmail');
 
-
-// event listener to load 
-document.addEventListener("DOMContentLoaded", function() {
-    startGame.focus
-})
-
 /**
  * collapsible function for the rules of the game
  */
@@ -46,9 +40,6 @@ startButton.addEventListener("keydown", function (event) {
 //  on input the wordCheck function will be activated
 wordInput.addEventListener('input', wordCheck);
 
-
-
-
 // click event and keydown event to submit email
 emailSubmit.addEventListener('click', submitEmail);
 
@@ -57,9 +48,6 @@ emailSubmit.addEventListener("keydown", function (event) {
         submitEmail();
     }
 });
-
-
-
 
 /**
  * click event and keyup event to start the game, render a word, start the timer and hide button.
@@ -78,9 +66,6 @@ function playGame(event) {
     // start the timer
     timer(9);
 }
-
-
-
 
 /**
  * get random word from string of 6 letter words in words.js
@@ -157,11 +142,17 @@ function wordCheck() {
     }
 }
 
+/**
+ * 
+ */
 function scoreCount() {
     let oldScore = score.innerText;
     score.innerText = ++oldScore;
 }
 
+/**
+ * 
+ */
 function endGame() {
     // wordInput.blur();
     endGameContainer.className = 'end-game-container'
@@ -172,6 +163,32 @@ function endGame() {
     // emailBox.focus();
 }
 
-function submitEmail() {
+
+(function () {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init('DGscXQC-1ku4fZMZ-');
+})();
+
+
+window.onload = function () {
+    document.getElementById('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_6c68e72', 'contact_form', this)
+            .then(function () {
+                console.log('SUCCESS!');
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+    });
+}
+
+
+
+
+/**
+ * 
+ */
+function Return() {
 
 }

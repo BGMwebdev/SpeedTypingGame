@@ -70,6 +70,7 @@ h1 {
     background-color: #FFFBDD;
     border: 2px solid #021e51;
     border-radius: .3rem;
+    box-shadow: 5px 5px 6px 0px rgba(14, 0, 59, 0.74);
     text-align: center;
     z-index: 3;
   }
