@@ -18,8 +18,8 @@
         <button type="button" class="collapsible">?</button>
         <div class="collapsible-content">
             <p>This is how you play... <br>
-                Just press 'start game' and begin typing. Don't mind capitals. <br>
-                you have 60 seconds to type as many 6 letter words as you can.<br>
+                Just press 'Start Game' and begin typing. Don't mind capitals. <br>
+                you have 60 seconds to type as many 6-letter words as you can.<br>
                 Every incorrect letter will turn red and every correct letter green. <br>
                 When the word is completely green, the next word will automatically show. <br>
             The counter keeps the score. Good Luck!</p>
@@ -29,14 +29,14 @@
         <h2>Press Enter to Start Game</h2>
         <button class="button" id="startButton" autofocus>Start Game</button>
     </div>
-    <div class="game-container" id="gamePlay">
+    <div class="game-container hide" id="gamePlay">
         <div class="timer" id="timer">10</div>
         <div class="score" id="score">0</div>
         <div class="example-word" id="exampleWord">Empty</div>
         <label for="answerWord" class="answer-box">Type here:</label>
         <input type="text" class="answer-word" id="answerWord" autocomplete="off">
     </div>
-    <div class="end-game-container" id="endGameContainer">
+    <div class="end-game-container hide" id="endGameContainer">
         <form action="POST" class="form" id="form">
             <h3 class="game-outcome" id="gameOutcome">msg</h3>
             <p class="text-outcome" id="textOutcome"></p>

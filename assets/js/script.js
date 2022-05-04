@@ -6,14 +6,22 @@ let wordInput = document.getElementById('answerWord');
 let wordArray = words.split(' ');
 let outputTimer = document.getElementById('timer');
 let score = document.getElementById('score');
+let endGameContainer = document.getElementById('endGameContainer')
 let gameOutcome = document.getElementById('gameOutcome');
 let emailBox = document.getElementById('emailBox');
 let emailSubmit = document.getElementById('submitEmail');
 
 
+// event listener to load 
+document.addEventListener("DOMContentLoaded", function() {
+    startGame.focus
+})
+
+/**
+ * collapsible function for the rules of the game
+ */
 let collapsible = document.getElementsByClassName("collapsible");
 let i;
-
 for (i = 0; i < collapsible.length; i++) {
   collapsible[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -25,7 +33,6 @@ for (i = 0; i < collapsible.length; i++) {
     }
   });
 }
-
 
 // click event and keydown event to activate start game
 startButton.addEventListener('click', playGame);
@@ -59,8 +66,10 @@ emailSubmit.addEventListener("keydown", function (event) {
  */
 function playGame(event) {
     event.preventDefault();
-    // hide start button
+    // hide start screen
     startGame.className = 'hide';
+    // show game play
+    gamePlay.className = 'game-container';
     // focus on word input
     wordInput.focus();
     // show random word
@@ -154,10 +163,12 @@ function scoreCount() {
 }
 
 function endGame() {
-    wordInput.blur();
+    // wordInput.blur();
+    endGameContainer.className = 'end-game-container'
     gamePlay.className = 'hide'
     gameOutcome.textContent = `Congratulations!!! Your score is ${document.getElementById('score').innerText}`;
     textOutcome.textContent = 'If you would like your score to be send to you, please enter your name and email:';
+
     // emailBox.focus();
 }
 
