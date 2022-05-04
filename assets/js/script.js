@@ -10,6 +10,7 @@ let endGameContainer = document.getElementById('endGameContainer')
 let gameOutcome = document.getElementById('gameOutcome');
 let emailBox = document.getElementById('emailBox');
 let emailSubmit = document.getElementById('submitEmail');
+let sendScore = document.getElementById('sendScore')
 
 /**
  * collapsible function for the rules of the game
@@ -159,7 +160,7 @@ function endGame() {
     gamePlay.className = 'hide'
     gameOutcome.textContent = `Congratulations!!! Your score is ${document.getElementById('score').innerText}`;
     textOutcome.textContent = 'If you would like your score to be send to you, please enter your name and email:';
-
+    sendScore.value = `${document.getElementById('score').innerText}`
     // emailBox.focus();
 }
 

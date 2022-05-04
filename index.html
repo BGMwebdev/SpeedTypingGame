@@ -40,10 +40,11 @@
         <form class="form" id="form">
             <h3 class="game-outcome" id="gameOutcome">msg</h3>
             <p class="text-outcome" id="textOutcome"></p>
+            <input type="hidden" name="score" id="sendScore" value="">
             <label for="toName">Your Name:</label>
-            <input type="text" class="form-box" id="toName" required>
+            <input type="text" class="form-box" id="toName" name="user_name" required>
             <label for="emailBox">Your Email:</label>
-            <input type="email" class="form-box" id="emailBox" name="email">
+            <input type="email" class="form-box" id="emailBox" name="user_email">
             <input type="submit" value="Send Score!" class="button" id="submitEmail">
         </form>
     </div>
