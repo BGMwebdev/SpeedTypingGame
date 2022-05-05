@@ -56,9 +56,9 @@ emailSubmit.addEventListener("keydown", function (event) {
 function playGame(event) {
     event.preventDefault();
     // hide start screen
-    startGame.className = 'hide';
+    startGame.className = 'start-game hide';
     // show game play
-    gamePlay.className = 'game-container';
+    gamePlay.className = 'game-container show';
     // focus on word input
     wordInput.focus();
     // show random word
@@ -156,8 +156,9 @@ function scoreCount() {
  */
 function endGame() {
     // wordInput.blur();
-    endGameContainer.className = 'end-game-container'
-    gamePlay.className = 'hide'
+    endGameContainer.className = 'end-game-container show'
+    gamePlay.className = 'game-container hide'
+    
     gameOutcome.textContent = `Congratulations!!! Your score is ${document.getElementById('score').innerText}`;
     textOutcome.textContent = 'If you would like your score to be send to you, please enter your name and email:';
     sendScore.value = `${document.getElementById('score').innerText}`
