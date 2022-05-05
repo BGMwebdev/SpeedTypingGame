@@ -174,7 +174,7 @@ function endGame() {
 window.onload = function () {
     document.getElementById('form').addEventListener('submit', function (event) {
         event.preventDefault();
-        // these IDs from the previous steps
+        alert("Your score  has been sent!")
         emailjs.sendForm('service_6c68e72', 'contact_form', this)
             .then(function () {
                 console.log('SUCCESS!');
