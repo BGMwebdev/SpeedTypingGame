@@ -46,12 +46,12 @@ h1 {
     color: #FFFBDD;
     font-family: 'Chakra Petch', sans-serif;
     cursor: pointer;
-    padding: 20px;
+    padding: 15px 0 5px;
     width: fit-content;
     border: none;
     text-align: center;
     outline: none;
-    font-size: large;
+    font-size: large;    
 }
 
 .active,
