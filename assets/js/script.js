@@ -11,6 +11,7 @@ let gameOutcome = document.getElementById('gameOutcome');
 let emailBox = document.getElementById('emailBox');
 let emailSubmit = document.getElementById('submitEmail');
 let sendScore = document.getElementById('sendScore')
+let collContent = document.getElementById('collContent')
 
 /**
  * collapsible function for the rules of the game
@@ -57,6 +58,8 @@ function playGame(event) {
     event.preventDefault();
     // hide start screen
     startGame.className = 'start-game hide';
+    // hide collabsible content
+    collContent.classname = 'collapsible-content hide'
     // show game play
     gamePlay.className = 'game-container show';
     // focus on word input
