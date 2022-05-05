@@ -156,7 +156,7 @@ function scoreCount() {
  */
 function endGame() {
     // wordInput.blur();
-    endGameContainer.className = 'end-game-container'
+    endGameContainer.className = 'end-game-container show'
     gamePlay.className = 'game-container hide'
     gameOutcome.textContent = `Congratulations!!! Your score is ${document.getElementById('score').innerText}`;
     textOutcome.textContent = 'If you would like your score to be send to you, please enter your name and email:';
