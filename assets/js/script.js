@@ -6,13 +6,13 @@ let wordInput = document.getElementById('answerWord');
 let wordArray = words.split(' ');
 let outputTimer = document.getElementById('timer');
 let score = document.getElementById('score');
-let endGameContainer = document.getElementById('endGameContainer')
+let endGameContainer = document.getElementById('endGameContainer');
 let gameOutcome = document.getElementById('gameOutcome');
 let emailBox = document.getElementById('emailBox');
 let emailSubmit = document.getElementById('submitEmail');
-let sendScore = document.getElementById('sendScore')
-let collContent = document.getElementById('collContent')
-let returnStart = document.getElementById('returnStart')
+let sendScore = document.getElementById('sendScore');
+let collContent = document.getElementById('collContent');
+let returnStart = document.getElementById('returnStart');
 
 // click event and keydown event to activate start game
 startButton.addEventListener('click', playGame);
@@ -20,7 +20,7 @@ startButton.addEventListener('click', playGame);
 startButton.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         playGame();
-    };
+    }
 });
 
 //  on input the wordCheck function will be activated
@@ -35,7 +35,7 @@ emailSubmit.addEventListener("keydown", function (event) {
     }
 });
 
-returnStart.addEventListener('click', Return)
+returnStart.addEventListener('click', Return);
 
 /**
  * collapsible function for the rules of the game
@@ -106,10 +106,10 @@ function timer(seconds) {
         outputTimer.textContent = counter;
         counter--;
         if (counter < 0) {
-            clearInterval(interval)
+            clearInterval(interval);
             endGame();
         }
-    }, 1000)
+    }, 1000);
 }
 
 /**
@@ -162,36 +162,31 @@ function scoreCount() {
  */
 function endGame() {
     // wordInput.blur();
-    endGameContainer.className = 'end-game-container show'
-    gamePlay.className = 'game-container hide'
+    endGameContainer.className = 'end-game-container show';
+    gamePlay.className = 'game-container hide';
     gameOutcome.textContent = `Congratulations!!! Your score is ${document.getElementById('score').innerText}`;
     textOutcome.textContent = 'If you would like your score to be send to you, please enter your name and email:';
-    sendScore.value = `${document.getElementById('score').innerText}`
-    // emailBox.focus();
+    sendScore.value = `${document.getElementById('score').innerText}`;
 }
 
-
+/**
+ * 
+ */
 (function () {
-    // https://dashboard.emailjs.com/admin/account
     emailjs.init('DGscXQC-1ku4fZMZ-');
 })();
-
 
 window.onload = function () {
     document.getElementById('form').addEventListener('submit', function (event) {
         event.preventDefault();
-        alert("Your score  has been sent!")
-        emailjs.sendForm('service_6c68e72', 'contact_form', this)
-            .then(function () {
+        alert("Your score  has been sent!");
+        emailjs.sendForm('service_6c68e72', 'contact_form', this).then(function () {
                 console.log('SUCCESS!');
             }, function (error) {
                 console.log('FAILED...', error);
             });
     });
-}
-
-
-
+};
 
 /**
  * 
@@ -202,7 +197,7 @@ function Return() {
     // hide end game screen
     endGameContainer.className = 'end-game-container hide';
     // return score to 0
-    document.getElementById('score').innerText = 0
+    document.getElementById('score').innerText = 0;
     // return timer to 60
-    document.getElementById('timer').innerText = 10
+    document.getElementById('timer').innerText = 10;
 }
