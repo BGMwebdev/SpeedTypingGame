@@ -71,7 +71,7 @@ function playGame(event) {
     // outputWord();
     renderNewWord();
     // start the timer
-    timer(59);
+    timer(3);
 }
 
 /**
@@ -199,5 +199,5 @@ function Return() {
     // return score to 0
     document.getElementById('score').innerText = 0;
     // return timer to 60
-    document.getElementById('timer').innerText = 10;
+    document.getElementById('timer').innerText = 4;
 }

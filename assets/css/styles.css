@@ -18,7 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .hide {
@@ -78,7 +78,7 @@ h1 {
     background-color: #FFFBDD;
     border: 2px solid #021e51;
     border-radius: .3rem;
-    box-shadow: 5px 5px 6px 0px rgba(14, 0, 59, 0.74);
+    box-shadow: 5px 10px 15px -7px #00014A;
     text-align: center;
     z-index: 3;
 }
@@ -92,7 +92,7 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     width: 250px;
-    height: 385px;
+    height: 355px;
     margin: 10px;
     border-radius: 1.5rem;
     box-shadow: 2px 5px 16px 0px #0B325E, 10px 16px 18px 0px rgba(0,13,92,0.62);
@@ -109,7 +109,7 @@ h1 {
     height: 35px;
     border: 1px solid #00369b;
     border-radius: .7rem;
-    box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px #021e5100;
+    box-shadow: 5px 10px 15px -7px #00014A;
     font-family: 'Chakra Petch', sans-serif;
     font-size: .9rem;
     color: #00369b;
@@ -136,7 +136,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 250px;
-    height: 385px;
+    height: 355px;
     border-radius: 1.5rem;
     text-align: center;
 }
@@ -204,7 +204,7 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     width: 250px;
-    height: 385px;
+    height: 355px;
     border-radius: 1.5rem;
     text-align: center;
     z-index: 1;
