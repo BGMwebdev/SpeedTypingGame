@@ -12,23 +12,7 @@ let emailBox = document.getElementById('emailBox');
 let emailSubmit = document.getElementById('submitEmail');
 let sendScore = document.getElementById('sendScore')
 let collContent = document.getElementById('collContent')
-
-/**
- * collapsible function for the rules of the game
- */
-let collapsible = document.getElementsByClassName("collapsible");
-let i;
-for (i = 0; i < collapsible.length; i++) {
-  collapsible[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+let returnStart = document.getElementById('returnStart')
 
 // click event and keydown event to activate start game
 startButton.addEventListener('click', playGame);
@@ -50,6 +34,25 @@ emailSubmit.addEventListener("keydown", function (event) {
         submitEmail();
     }
 });
+
+returnStart.addEventListener('click', Return)
+
+/**
+ * collapsible function for the rules of the game
+ */
+let collapsible = document.getElementsByClassName("collapsible");
+let i;
+for (i = 0; i < collapsible.length; i++) {
+  collapsible[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 
 /**
  * click event and keyup event to start the game, render a word, start the timer and hide button.
@@ -194,5 +197,12 @@ window.onload = function () {
  * 
  */
 function Return() {
-
+    // show start screen
+    startGame.className = 'start-game show';
+    // hide end game screen
+    endGameContainer.className = 'end-game-container hide';
+    // return score to 0
+    document.getElementById('score').innerText = 0
+    // return timer to 60
+    document.getElementById('timer').innerText = 10
 }

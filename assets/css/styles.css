@@ -103,10 +103,10 @@ h1 {
 }
 
 .button {
-    width: 120px;
-    height: 50px;
+    width: 100px;
+    height: 35px;
     border: 1px solid #00369b;
-    border-radius: 1.1rem;
+    border-radius: .7rem;
     font-family: 'Chakra Petch', sans-serif;
     color: #00369b;
     background-color: #baffba;
