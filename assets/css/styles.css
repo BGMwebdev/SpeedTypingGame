@@ -18,6 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Chakra Petch', sans-serif;
+    font-size: 1rem;
 }
 
 .hide {
@@ -94,6 +95,7 @@ h1 {
     height: 400px;
     margin: 10px;
     border-radius: 1.5rem;
+    box-shadow: 2px 5px 16px 0px #0B325E, 10px 16px 18px 0px rgba(0,13,92,0.62);
     text-align: center;
 }
 
@@ -103,11 +105,13 @@ h1 {
 }
 
 .button {
-    width: 100px;
+    width: 110px;
     height: 35px;
     border: 1px solid #00369b;
     border-radius: .7rem;
+    box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px #021e5100;
     font-family: 'Chakra Petch', sans-serif;
+    font-size: .9rem;
     color: #00369b;
     background-color: #baffba;
     margin: 10px;
@@ -161,14 +165,14 @@ h1 {
     font-weight: 600;
     border: 1px solid #ffe313;
     border-radius: .2rem;
-    width: 90%;
+    width: 80%;
     background-color: #fffef6;
 }
 
 .answer-word {
     margin-bottom: 10px;
-    padding: 5px;
-    width: 90%;
+    padding: 8px;
+    width: 80%;
     text-align: center;
     outline: none;
     color: #021e51;
@@ -251,10 +255,15 @@ footer p {
 
 /* small tablet styles */
 @media screen and (min-width: 768px) {
+    /* general styling */
+    body {
+        font-size: 1.1rem;
+    }
+    /* heading styling*/
     h1 {
         font-size: 1.7rem;
     }
-
+    /* start game styling */
     .start-game {
         width: 275px;
         height: 440px;
@@ -265,29 +274,59 @@ footer p {
     }
 
     .button {
-        width: 110px;
+        width: 120px;
         height: 39px;
         font-size: 1rem;
     }
-
+    /* game styling */
     .game-container {
         width: 275px;
         height: 440px;
     }
 
+    .timer {
+        font-size: 1.3rem;
+    }
+    
+    .score {
+        font-size: 1.3rem;
+    }
+
+    .example-word {
+        font-size: 1.3rem;
+    }
+    
+    .answer-word {
+        font-size: 1.3rem;
+    }
+
+    /* end game styling */
     .end-game-container {
         width: 275px;
         height: 440px;
+    }
+
+    .form-box {
+        font-size: 1.2rem;
+    }
+
+    .game-outcome {
+        font-size: 1.4rem;
     }
 }
 
 /* large tablet and laptop styles */
 @media screen and (min-width: 960px) {
+    /* general styling */
+    body {
+        font-size: 1.2rem;
+    }
+    /* heading styling */
     h1 {
         font-size: 1.9rem;
     }
 
-    /* start game div styling */
+    /* start game styling */
     .start-game {
         width: 300px;
         height: 480px;
@@ -298,16 +337,33 @@ footer p {
     }
 
     .button {
-        width: 120px;
+        width: 130px;
         height: 43px;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
-
+    /* game styling */
     .game-container {
         width: 300px;
         height: 480px;
     }
 
+    .timer {
+        font-size: 1.4rem;
+    }
+    
+    .score {
+        font-size: 1.4rem;
+    }
+
+    .example-word {
+        font-size: 1.4rem;
+    }
+    
+    .answer-word {
+        font-size: 1.4rem;
+    }
+
+    /* end game styling */
     .end-game-container {
         width: 300px;
         height: 480px;
@@ -324,11 +380,16 @@ footer p {
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
+    /* general styling */
+    body {
+        font-size: 1.3rem;
+    }
+    /* heading styling */
     h1 {
         font-size: 2.1rem;
     }
 
-    /* start game div styling */
+    /* start game styling */
     .start-game {
         width: 350px;
         height: 560px;
@@ -339,26 +400,43 @@ footer p {
     }
 
     .button {
-        width: 130px;
+        width: 140px;
         height: 47px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-
+    /* game styling */
     .game-container {
-        width: 300px;
-        height: 480px;
+        width: 350px;
+        height: 560px;
     }
 
+    .score {
+        font-size: 1.5rem;
+    }
+
+    .example-word {
+        font-size: 1.5rem;
+    }
+
+    .example-word {
+        font-size: 1.5rem;
+    }
+    
+    .answer-word {
+        font-size: 1.5rem;
+    }
+
+    /* end game styling */
     .end-game-container {
-        width: 300px;
-        height: 480px;
+        width: 350px;
+        height: 560px;
     }
     
     .form-box {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .game-outcome {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 }

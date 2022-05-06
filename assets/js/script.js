@@ -71,7 +71,7 @@ function playGame(event) {
     // outputWord();
     renderNewWord();
     // start the timer
-    timer(2);
+    timer(59);
 }
 
 /**
