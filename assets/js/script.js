@@ -62,7 +62,7 @@ function playGame(event) {
     // hide start screen
     startGame.className = 'start-game hide';
     // hide collabsible content
-    collContent.classname = 'collapsible-content hide'
+    collContent.classname = 'collapsible-content hide';
     // show game play
     gamePlay.className = 'game-container show';
     // focus on word input
@@ -71,7 +71,7 @@ function playGame(event) {
     // outputWord();
     renderNewWord();
     // start the timer
-    timer(9);
+    timer(2);
 }
 
 /**
