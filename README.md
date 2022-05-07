@@ -122,7 +122,7 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 <hr>
 
 ### Design choices
-For the design I choose to keep it minimalistic. A bright blue color with a broken white contrasting color. For the Font I picked 'Chakra Petch', which I feel go really well with the theme, speed typing. It has this 80/90's-game-vibe to it which takes me back to old sega racing games. The color green on the buttons asks for action. Green is go! which made it an obvious choice for me. I wanted to keep the game in the center of the page and not take more space, as the focus needs to be in the center, where the words will be presented.<hr> 
+For the design I choose to keep it minimalistic. A bright blue color with a broken white contrasting color. For the Font I picked 'Chakra Petch', which I feel go really well with the theme, speed typing. It has this 80/90's-game-vibe to it which takes me back to old sega racing games. The color green on the buttons asks for action. Green is go! which made it an obvious choice for me. I wanted to keep the game in the center of the page and not take more space, as the focus needs to be in the center, where the words will be presented. Also we read from left to right and top to bottom, I wanted to keep everything centered (including the question mark) so it would be easy to navigate with the eyes top to bottom, and not lead you astray.<hr> 
 
 ### Features for the future
 - I would like to add feedback through sound. For example, every 5th word you would hear something like "great", "well done", "you're on fire".
@@ -214,10 +214,13 @@ The live link the deployed project can be found here: [Speed Typing Game](https:
     - I found this cool [CSS Box Shadow Generator](https://html-css-js.com/css/generator/box-shadow/) that I used to create a bit of depth on my pages. 
     - I had a lot of help from [Web Dev Simplified](https://www.youtube.com/watch?v=R-7eQIHRszQ) and his tutorial on how to build a speed typing game with JavaScript. He gave me some inside on how to use async functions. I used his code for the async function, as for the loop to create red and green colors and adjusted it to my game. This helped me a lot in the learning proces of how to compare index of different elements and set/change their class. 
     - The video of [Acadea.io](https://www.youtube.com/watch?v=yZ93TTdGxa8) about Building a speed typing game inspired me to use the string of words the I have used them now. This was also one of the first video's on speed typing games I watched, which inspired me to try to build one myself.
+    <hr>
 
 - #### Media
     - I took all 6 letter words from [The free Dictionary](https://www.thefreedictionary.com/6-letter-words.htm)
     - I used an Icon from [Font Awesome](https://fontawesome.com/icons/keyboard?s=light) and generated a favicon from it through [Favicon Generator](https://favicon.io/favicon-converter/)
+    <hr>
 
 - #### books
     - [JavaScript & JQuery - Jon Duckett](https://www.amazon.ca/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647)
+    <hr>
