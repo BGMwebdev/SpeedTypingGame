@@ -13,38 +13,41 @@ Type as many of the 6-letter words that are shown, as you can, in 60 seconds. Wh
 ## Table of Content
 <hr>
 
-### Introduction
+[Introduction](#introduction)
 
-### Table of content
+[Table of content](#table-of-content)
 
-### Features:
-- #### Header
-- #### Landing page
-- #### Footer
-- #### Send email
-- #### Email sent alert
+[Features](#features)
+- [Header](#header)
+- [Start Game page](#start-game-page)
+- [Footer](#footer)
+- [Game Play page](#game-play-page)
+- [End Game page](#end-game-page)
+- [Send email](#send-email)
+- [Email sent alert](#email-sent-alert)
+- [Email recieved](#email-recieved)
 
-### Wireframes
+[Wireframes](#wireframes)
 
-### Design choices
+[Design choices](#design-choices)
 
-### Features for the future
+[Features for the future](#features-for-the-future)
 
-### Languages used
+[Languages used](#languages-used)
 
-### Testing
-- #### Responsive design
-- #### Validation testing
-- #### Bugs & errors
+[Testing](#testing)
+- [Responsive design](#responsive-design)
+- [Validation testing](#validation-testing)
+- [Bugs & errors](#bugs--errors)
 
-### Deployment
-- #### Steps
-- #### Live link
+[Deployment](#deployment)
+- [Steps](#steps)
+- [Live link](#live-link)
 
-### Credits
-- #### Content
-- #### Media
-- #### books
+[Credits](#credits)
+- [Content](#content)
+- [Media](#media)
+- [books](#books)
 <hr>
 
 ### Features:
@@ -74,6 +77,10 @@ Type as many of the 6-letter words that are shown, as you can, in 60 seconds. Wh
 
 - #### Email sent alert
 ![Email sent alert](assets/images/email_sent.png)
+<hr>
+
+- #### Email recieved
+![Email recieved](assets/images/email.png)
 <hr>
 
 ### Wireframes
