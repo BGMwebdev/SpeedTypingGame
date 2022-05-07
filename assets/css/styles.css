@@ -92,7 +92,7 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     width: 250px;
-    height: 355px;
+    height: 360px;
     margin: 10px;
     border-radius: 1.5rem;
     box-shadow: 2px 5px 16px 0px #0B325E, 10px 16px 18px 0px rgba(0,13,92,0.62);
@@ -136,7 +136,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 250px;
-    height: 355px;
+    height: 360px;
     border-radius: 1.5rem;
     box-shadow: 2px 5px 16px 0px #0B325E, 10px 16px 18px 0px rgba(0,13,92,0.62);
     text-align: center;
@@ -205,7 +205,7 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     width: 250px;
-    height: 355px;
+    height: 360px;
     border-radius: 1.5rem;
     box-shadow: 2px 5px 16px 0px #0B325E, 10px 16px 18px 0px rgba(0,13,92,0.62);
     text-align: center;
@@ -268,7 +268,7 @@ footer p {
     /* start game styling */
     .start-game {
         width: 275px;
-        height: 395px;
+        height: 410px;
     }
 
     .start-game h2 {
@@ -283,7 +283,7 @@ footer p {
     /* game styling */
     .game-container {
         width: 275px;
-        height: 395px;
+        height: 410px;
     }
 
     .timer {
@@ -305,7 +305,7 @@ footer p {
     /* end game styling */
     .end-game-container {
         width: 275px;
-        height: 395px;
+        height: 410px;
     }
 
     .form-box {
@@ -332,7 +332,7 @@ footer p {
     /* start game styling */
     .start-game {
         width: 300px;
-        height: 435px;
+        height: 450px;
     }
 
     .start-game h2 {
@@ -347,7 +347,7 @@ footer p {
     /* game styling */
     .game-container {
         width: 300px;
-        height: 435px;
+        height: 450px;
     }
 
     .timer {
@@ -369,7 +369,7 @@ footer p {
     /* end game styling */
     .end-game-container {
         width: 300px;
-        height: 435px;
+        height: 450px;
     }
     
     .form-box {
@@ -395,7 +395,7 @@ footer p {
     /* start game styling */
     .start-game {
         width: 350px;
-        height: 515px;
+        height: 530px;
     }
 
     .start-game h2 {
@@ -410,7 +410,7 @@ footer p {
     /* game styling */
     .game-container {
         width: 350px;
-        height: 515px;
+        height: 530px;
     }
 
     .score {
@@ -432,7 +432,7 @@ footer p {
     /* end game styling */
     .end-game-container {
         width: 350px;
-        height: 515px;
+        height: 530px;
     }
     
     .form-box {
