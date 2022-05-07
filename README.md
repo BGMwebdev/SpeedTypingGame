@@ -155,17 +155,69 @@ For this educational project I used HTML, CSS and a main focus on Javascript.
     - Uploaded stylesheet daily.
     - Made all necessary changes.
     - Ran test again to verify all CSS passed.
-![CSS validation](assets/images/css_validation.png)
-![Color contrast validation](assets/images/color_contrast_checker.png)
+
+    ![CSS validation](assets/images/css_validation.png)
+
+    - jshint.com Test to validate my JavaScript:[jshint validator](https://jshint.com/)
+    - I ran partials of the JavaScript code daily through jshint.
+    - JavaScript Tutor to validate my JavaScript:[JavaScript Tutor](https://pythontutor.com/javascript.html#mode=edit)
+    - I ran partials of the JavaScript code daily through JavaScript Tutor, to try things out and validate.
+
+    - I also ran a color contrast checker.
+
+    ![Color contrast validation](assets/images/color_contrast_checker.png)
+
+    - Lighthouse is used to test the live website on desktop and mobile to check performance and accessibility.
+        - Lighthouse test on desktop:
+
+        ![Lighthouse on desktop](assets/images/desktop_performance_lighthouse.png)
+
+        - Lighthouse test on mobile:
+
+        ![Lighthouse on mobile](assets/images/mobile_performance_lighthouse.png)
 <hr>
 
 - #### Bugs & errors
+    - First time I ran the game through lighthouse I had an 85% on accessibility, due to the fact that I did not have labels in the form and with my word box. 
+    - Mid-way through the project I couldn't select or fill in the form on the last page. I changed z-index's to classes of hide and show. 
+<hr>
 
 ### Deployment
 - #### Steps
+I've deployed the website early on, so I could test and update the website constantly.
+The steps taken to deploy the website are taken from the readme of my first project [Women's-circle](https://github.com/BGMwebdev/first-project/blob/main/README.md#testing).
+
+1. In the GitHub repository, navigate to the Settings tab
+2. Scroll down to Github pages in the left side menu
+3. From the source section drop-down menu, select the main branch
+4. Once the main branch has been selected, click "Save"
+5. GitHub will display a message confirming that the site has been deployed successfully
+6. GitHub will provide a link to the deployed site
+7. Click on the link to view the site has deployed in a new tab
+
 - #### Live link
+The live link the deployed project can be found here: [Speed Typing Game](https://bgmwebdev.github.io/SpeedTypingGame/ "Live Link")
+<hr>
 
 ### Credits
 - #### Content
+    - looking back at the [Love Maths](https://github.com/BGMwebdev/love-maths) project helped me a lot to structure the projects JavaScript, to understand the interlacings of functions and event listeners and connect it with the right HTML elements.
+    - [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises) helped me to learn about promises and async functions.
+    - [W3schools](https://www.w3schools.com/js/js_async.asp) also helped me to learn about async functions and how to use them.
+    - How to create an array from the string of words I have in my game I learned from [W3schools](https://www.w3schools.com/jsref/jsref_split.asp).
+    - How a timer works and is written I learned from [W3schools](https://www.w3schools.com/howto/howto_js_countdown.asp).
+    - The countdown timer I used I copied from [freecodecamp](https://www.freecodecamp.org/news/how-to-create-a-countdown-timer/), I tweaked it to my own needs for this game.
+    - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) gave me a great overview of how to write and work with arrow functions. 
+    - through the use of [Stack Overflow](https://stackoverflow.com/questions/11845678/adding-multiple-event-listeners-to-one-element) I found out how to use multiple event listeners with onen element. 
+    - I took the example of a collapsible from [W3schools](https://www.w3schools.com/howto/howto_js_collapsible.asp) and tweaked to my own needs for this game. 
+    - I used [emailjs.com](https://www.emailjs.com/docs/tutorial/overview/) and it's tutorial to set up the email service I used for my game. 
+    - I found this cool [CSS Box Shadow Generator](https://html-css-js.com/css/generator/box-shadow/) that I used to create a bit of depth on my pages. 
+    - I had a lot of help from [Web Dev Simplified](https://www.youtube.com/watch?v=R-7eQIHRszQ) and his tutorial on how to build a speed typing game with JavaScript. He gave me some inside on how to use async functions. I used his code for the async function, as for the loop to create red and green colors and adjusted it to my game. This helped me a lot in the learning proces of how to compare index of different elements and set/change their class. 
+    - The video of [Acadea.io](https://www.youtube.com/watch?v=yZ93TTdGxa8) about Building a speed typing game inspired me to use the string of words the I have used them now. This was also one of the first video's on speed typing games I watched, which inspired me to try to build one myself.
+
 - #### Media
+    - I took all 6 letter words from [The free Dictionary](https://www.thefreedictionary.com/6-letter-words.htm)
+    - I used an Icon from [Font Awesome](https://fontawesome.com/icons/keyboard?s=light) and generated a favicon from it through [Favicon Generator](https://favicon.io/favicon-converter/)
+
 - #### books
+    - [JavaScript & JQuery - Jon Duckett](https://www.amazon.ca/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647)
