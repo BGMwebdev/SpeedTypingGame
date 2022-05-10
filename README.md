@@ -125,6 +125,7 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 For the design I choose to keep it minimalistic. A bright blue color with a broken white contrasting color. For the Font I picked 'Chakra Petch', which I feel go really well with the theme, speed typing. It has this 80/90's-game-vibe to it which takes me back to old sega racing games. The color green on the buttons asks for action. Green is go! which made it an obvious choice for me. I wanted to keep the game in the center of the page and not take more space, as the focus needs to be in the center, where the words will be presented. Also we read from left to right and top to bottom, I wanted to keep everything centered (including the question mark) so it would be easy to navigate with the eyes top to bottom, and not lead you astray.<hr> 
 
 ### Features for the future
+- For now, the rules collapsible needs to be closed manually. I would like to add the option to click anywhere, for example start game, and that it would close automatically. 
 - I would like to add feedback through sound. For example, every 5th word you would hear something like "great", "well done", "you're on fire".
 - It would be nice to have a certificate send to your email with an everage typing speed which you can use to show off you skills, on LinkedIn for example. 
 - Also a difficulty level could be added, by taking out the colouring feedback loop. That way you wouldn't see mistakes turn up red or correct answers green.

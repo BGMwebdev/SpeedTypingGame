@@ -11,7 +11,7 @@ let gameOutcome = document.getElementById('gameOutcome');
 let emailBox = document.getElementById('emailBox');
 let emailSubmit = document.getElementById('submitEmail');
 let sendScore = document.getElementById('sendScore');
-let collContent = document.getElementById('collContent');
+// let collContent = document.getElementById('collContent');
 let returnStart = document.getElementById('returnStart');
 
 // click event and keydown event to activate start game
@@ -23,7 +23,7 @@ startButton.addEventListener("keydown", function (event) {
     }
 });
 
-//  on input the wordCheck function will be activated
+//  Input event, the wordCheck function will be activated
 wordInput.addEventListener('input', wordCheck);
 
 // click event and keydown event to submit email
@@ -35,6 +35,7 @@ emailSubmit.addEventListener("keydown", function (event) {
     }
 });
 
+// click event for the return button, to return to start
 returnStart.addEventListener('click', Return);
 
 /**
@@ -61,14 +62,11 @@ function playGame(event) {
     event.preventDefault();
     // hide start screen
     startGame.className = 'start-game hide';
-    // hide collabsible content
-    collContent.classname = 'collapsible-content hide';
     // show game play
     gamePlay.className = 'game-container show';
     // focus on word input
     wordInput.focus();
-    // show random word
-    // outputWord();
+    // output random word
     renderNewWord();
     // start the timer
     timer(59);
@@ -150,7 +148,7 @@ function wordCheck() {
 }
 
 /**
- * 
+ * Count the score and add one in the output
  */
 function scoreCount() {
     let oldScore = score.innerText;
@@ -158,7 +156,7 @@ function scoreCount() {
 }
 
 /**
- * 
+ * End game will show end game container, show messages and score, return button and email option
  */
 function endGame() {
     // wordInput.blur();
@@ -170,7 +168,7 @@ function endGame() {
 }
 
 /**
- * 
+ * This is the email function addopted from emailjs and adjusted to fit this website. 
  */
 (function () {
     emailjs.init('DGscXQC-1ku4fZMZ-');
@@ -189,7 +187,7 @@ window.onload = function () {
 };
 
 /**
- * 
+ * Go back to the beginning of the game
  */
 function Return() {
     // show start screen
