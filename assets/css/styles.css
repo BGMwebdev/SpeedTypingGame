@@ -395,7 +395,7 @@ footer p {
     /* start game styling */
     .start-game {
         width: 350px;
-        height: 530px;
+        height: 500px;
     }
 
     .start-game h2 {
@@ -410,7 +410,7 @@ footer p {
     /* game styling */
     .game-container {
         width: 350px;
-        height: 530px;
+        height: 500px;
     }
 
     .score {
@@ -432,7 +432,7 @@ footer p {
     /* end game styling */
     .end-game-container {
         width: 350px;
-        height: 530px;
+        height: 500px;
     }
     
     .form-box {
