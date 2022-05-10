@@ -1,3 +1,4 @@
+// define variables
 let startGame = document.getElementById('startGame');
 let startButton = document.getElementById('startButton');
 let gamePlay = document.getElementById('gamePlay');

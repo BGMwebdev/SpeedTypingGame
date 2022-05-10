@@ -56,6 +56,7 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
     ![Header](assets/images/header.png)
     - Underneath the title is a collapsible question mark, which, when pressed, will show the rules.
     - The rules are straight forward and easy to understand.
+    - At this point in development, the rules collapsible still needs to be closed by yourself.
 
     ![Collapsible](assets/images/collapsible.png)
 <hr>
@@ -181,6 +182,7 @@ For this educational project I used HTML, CSS and a main focus on Javascript.
 - #### Bugs & errors
     - First time I ran the game through lighthouse I had an 85% on accessibility, due to the fact that I did not have labels in the form and with my word box. 
     - Mid-way through the project I couldn't select or fill in the form on the last page. I changed z-index's to classes of hide and show. 
+    - Up untill the end I had a manifest error pertaining to my favicon. I took it out, it resolved the error, but doesn't show the favicon anymore.
 <hr>
 
 ### Deployment
