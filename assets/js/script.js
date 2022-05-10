@@ -11,7 +11,6 @@ let gameOutcome = document.getElementById('gameOutcome');
 let emailBox = document.getElementById('emailBox');
 let emailSubmit = document.getElementById('submitEmail');
 let sendScore = document.getElementById('sendScore');
-// let collContent = document.getElementById('collContent');
 let returnStart = document.getElementById('returnStart');
 
 // click event and keydown event to activate start game
