@@ -54,6 +54,7 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 [Deployment](#deployment)
 - [Steps](#steps)
 - [Live link](#live-link)
+- [EmailJS API](#emailjs-api)
 
 [Credits](#credits)
 - [Content](#content)
@@ -131,6 +132,7 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
     - Font Awesome
     - Favicon.io
     - JSHint
+    - JavaScript Tutor
     - Lighthouse
     - W3C Markup validation service
     - W3C Jigsaw CSS validation service
@@ -277,15 +279,23 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
     - Made all necessary corrections if they were stated.
     - Ran test again to verify all HTML passed.
 
+    <details>
+    <summary>html validation</summary>
+
     ![HTML validation](assets/images/html_vaildation.png)
+    </details>
 
     - W3C Jigsaw CSS Test:W3C HTML Validator.
     - Uploaded stylesheet daily.
     - Made all necessary changes.
     - Ran test again to verify all CSS passed.
 
-    ![CSS validation](assets/images/css_validation.png)
+    <details>
+    <summary>css validation</summary>
 
+    ![CSS validation](assets/images/css_validation.png)
+    </details>
+  
     - jshint.com Test to validate my JavaScript:[jshint validator](https://jshint.com/)
     - I ran partials of the JavaScript code daily through jshint.
     - JavaScript Tutor to validate my JavaScript:[JavaScript Tutor](https://pythontutor.com/javascript.html#mode=edit)
@@ -293,22 +303,48 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
 
     - I also ran a color contrast checker.
 
+    <details>
+    <summary>color contrast validation</summary>
+
     ![Color contrast validation](assets/images/color_contrast_checker.png)
+    </details>
+
+    - ANd I used WAVE WebAIM web accessibility evaluation tool for color contrast
+
+    <details>
+    <summary>wave color contrast</summary>
+
+    ![Wave Color Contrast](assets/images/contrast_wave.png)
+    </details>
 
     - Lighthouse is used to test the live website on desktop and mobile to check performance and accessibility.
-        - Lighthouse test on desktop:
+        
+    <details>
+    <summary>Lighthouse test on desktop</summary>
 
-        ![Lighthouse on desktop](assets/images/desktop_performance_lighthouse.png)
+    ![Lighthouse on desktop](assets/images/desktop_performance_lighthouse.png)
+    </details>
 
-        - Lighthouse test on mobile:
+    <details>
+    <summary>Lighthouse test on mobile</summary>
 
-        ![Lighthouse on mobile](assets/images/mobile_performance_lighthouse.png)
+    ![Lighthouse on mobile](assets/images/mobile_performance_lighthouse.png)
+    </details>
+
+    - Accessibility is also checked through WAVE WebAIM web accessibility evaluation tool
+
+    <details>
+    <summary>wave accessibility</summary>
+
+    ![Wave Accessibility](assets/images/accessibility_wave.png)
+    </details>
+
 <hr>
 
 - #### Bugs & errors
     - First time I ran the game through lighthouse I had an 85% on accessibility, due to the fact that I did not have labels in the form and with my word box. 
     - Mid-way through the project I couldn't select or fill in the form on the last page. I changed z-index's to classes of hide and show. 
-    - Up untill the end I had a manifest error pertaining to my favicon. I took it out, it resolved the error, but doesn't show the favicon anymore.
+    - Up untill the end I had a manifest error pertaining to my favicon. I took it out, it resolved the error.
 <hr>
 
 ### Deployment
@@ -328,6 +364,14 @@ The steps taken to deploy the website are taken from the readme of my first proj
 The live link the deployed project can be found here: [Speed Typing Game](https://bgmwebdev.github.io/SpeedTypingGame/ "Live Link")
 <hr>
 
+- #### EmailJS API
+1. Create an account at emailjs.com
+2. Add new email service, make note of the contact_service id
+3. Add a new email template, make note of the contact_form id
+4. Go the the integration dashboard, make note of your user id
+5. Load the EmailJS SDK in the head of your HTML file
+6. In JavaScript create a function that listens to a submit event and then initializes the SDK with your user id (emailjs.init('YOUR_USER_ID');) and submits the form (emailjs.7.sendForm('contact_service', 'contact_form', this);)
+
 ### Credits
 - #### Content
     - looking back at the [Love Maths](https://github.com/BGMwebdev/love-maths) project helped me a lot to structure the projects JavaScript, to understand the interlacings of functions and event listeners and connect it with the right HTML elements.
@@ -340,6 +384,7 @@ The live link the deployed project can be found here: [Speed Typing Game](https:
     - through the use of [Stack Overflow](https://stackoverflow.com/questions/11845678/adding-multiple-event-listeners-to-one-element) I found out how to use multiple event listeners with onen element. 
     - I took the example of a collapsible from [W3schools](https://www.w3schools.com/howto/howto_js_collapsible.asp) and tweaked to my own needs for this game. 
     - I used [emailjs.com](https://www.emailjs.com/docs/tutorial/overview/) and it's tutorial to set up the email service I used for my game. 
+    - I took the deployment steps for e=th emailjs from [Guessing Bee project](https://github.com/4n4ru/ci-p2-GuessingBee)
     - I found this cool [CSS Box Shadow Generator](https://html-css-js.com/css/generator/box-shadow/) that I used to create a bit of depth on my pages. 
     - I had a lot of help from [Web Dev Simplified](https://www.youtube.com/watch?v=R-7eQIHRszQ) and his tutorial on how to build a speed typing game with JavaScript. He gave me some inside on how to use async functions. I used his code for the async function, as for the loop to create red and green colors and adjusted it to my game. This helped me a lot in the learning proces of how to compare index of different elements and set/change their class. 
     - The video of [Acadea.io](https://www.youtube.com/watch?v=yZ93TTdGxa8) about Building a speed typing game inspired me to use the string of words the I have used them now. This was also one of the first video's on speed typing games I watched, which inspired me to try to build one myself.
