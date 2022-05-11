@@ -30,6 +30,10 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 
 [Wireframes](#wireframes)
 
+[Technologies used](#technologies-used)
+- [Languages]()
+- [Tools]()
+
 [Features](#features)
 - [Header](#header)
 - [Start Game page](#start-game-page)
@@ -41,8 +45,6 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 - [Email recieved](#email-recieved)
 
 [Features for the future](#features-for-the-future)
-
-[Languages used](#languages-used)
 
 [Testing](#testing)
 - [Responsive design](#responsive-design)
@@ -113,6 +115,29 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
 ![Wireframe desktop gameplay](assets/images/wireframe_desktop.png)
 </details>
 
+<hr>
+
+### Technologies used
+- #### Languages
+    - HTML
+    - CSS
+    - JavaScript
+
+- #### Tools
+    - Bootstrap v5.0
+    - GitHub
+    - Gitpod
+    - Balsamiq
+    - Font Awesome
+    - Favicon.io
+    - JSHint
+    - Lighthouse
+    - W3C Markup validation service
+    - W3C Jigsaw CSS validation service
+    - WAVE WebAIM web accessibility evaluation tool
+    - Amiresponsive
+    - Responsinator
+    - EmailJS
 <hr>
 
 ### Features:
@@ -232,17 +257,18 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
 - Also a difficulty level could be added, by taking out the colouring feedback loop. That way you wouldn't see mistakes turn up red or correct answers green.
 <hr>
 
-### Languages used
-For this educational project I used HTML, CSS and a main focus on Javascript. 
-<hr>
-
 ### Testing
 - #### Responsive design
     - This website is tested for responsive design through the use of different size settings in chrome dev-tools and its device toolbar.
     - Responsivity is also tested on http://ami.responsivedesign.is/ (see image at the top of the page in the introduction and down here) and on https://www.responsinator.com/ where also different viewport sizes are presented.
     - The smallest functional size is 260x540px. With a smaller size, elements will start to overlap.
 
+    <details>
+    <summary>responsive design</summary>
+
     ![Responsive design](assets/images/responsive.png)
+    </details>
+    
 <hr>
 
 - #### Validation testing
