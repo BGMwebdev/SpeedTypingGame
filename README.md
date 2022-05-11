@@ -83,15 +83,16 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
     - The game should look good on different sizes.
 
 - #### User Stories
-    - I would like to be challenged in the game.
-    - I would like to have feedback wether or not I type the word correctly.
-    - I want to be able to start typing directly, without having to click on the box first.
-    - I want to be able to have to scorre send to me.
-    - I want to get feedback wether or not the score was send.
-    - I want to be able to play again right after.
+    1. I would like to be challenged in the game.
+    2. I would like to have feedback wether or not I type the word correctly.
+    3. I want to be able to start typing directly, without having to click on the box first.
+    4. I want to be able to have to scorre send to me.
+    5. I want to get feedback wether or not the score was send.
+    6. I want to be able to play again right after.
 
 - #### Site Owner Stories
-    - 
+    7. I want people to play the game again and again.
+    8. I want people to share their score with one another.
 
 ### Features:
 - #### Header
