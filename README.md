@@ -119,12 +119,22 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
 - #### Header
     - In the header you see a clear title, which also declares directly what the game is about. 
 
+    <details>
+    <summary>header</summary>
+
     ![Header](assets/images/header.png)
+    </details>
+
     - Underneath the title is a collapsible question mark, which, when pressed, will show the rules.
     - The rules are straight forward and easy to understand.
     - At this point in development, the rules collapsible still needs to be closed by yourself.
 
+    <details>
+    <summary>question mark</summary>
+
     ![Collapsible](assets/images/collapsible.png)
+    </details>
+    
 <hr>
 
 - #### Start Game page
@@ -132,14 +142,24 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
     - It states a clear message: press enter to start game.
     - There is a button which can be pressed if it's not already on focus, for example after reading the rules.
 
+    <details>
+    <summary>start game page</summary>
+
     ![Start Game page](assets/images/start_game.png)
+    </details>
+    
 <hr>
 
 - #### Footer
     - The footer is clean and simple. 
     - For this project it didn't need much more.
 
+    <details>
+    <summary>footer</summary>
+
     ![Footer](assets/images/footer.png)
+    </details>
+    
 <hr>
 
 - #### Game Play page
@@ -149,7 +169,12 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
     - The example word letters will turn red when typed wrong and green when typed right.
     - There is an answer box, where you type in the word. This box is automatically emptied when the word is correct and a new word is shown.
 
+    <details>
+    <summary>game play page</summary>
+
     ![Game Play page](assets/images/game_play.png)
+    </details>
+    
 <hr>
 
 - #### End Game page
@@ -159,25 +184,45 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
     - A send score button to receive the score.
     - There is also a return button to start a new game.
 
+    <details>
+    <summary>end game page</summary>
+
     ![End Game page](assets/images/end_game.png)
+    </details>
+    
 <hr>
 
 - #### Send email
     - You have to fill out the name and email boxes if you would like the score. They are required.
 
+    <details>
+    <summary>send email</summary>
+
     ![Send email](assets/images/required.png)
+    </details>
+    
 <hr>
 
 - #### Email sent alert
     - After submitting, there is an alert message. This let's you know the email has been sent.
 
+    <details>
+    <summary>email sent alert</summary>
+
     ![Email sent alert](assets/images/email_sent.png)
+    </details>
+    
 <hr>
 
 - #### Email recieved
     - Check your inbox (or junk), you've recieved your score and a message!
 
-    ![Email recieved](assets/images/email.png)
+    <details>
+    <summary>email received</summary>
+
+    ![Email received](assets/images/email.png)
+    </details>
+    
 <hr>
 
 ### Features for the future
