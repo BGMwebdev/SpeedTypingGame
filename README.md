@@ -16,6 +16,10 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 
 [Table of content](#table-of-content)
 
+[Project Goals](#project-goals)
+- [User Goals]()
+- [Site owner Goals]()
+
 [Features](#features)
 - [Header](#header)
 - [Start Game page](#start-game-page)
@@ -48,6 +52,13 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 - [Media](#media)
 - [books](#books)
 <hr>
+
+### Project Goals
+- #### User Goals
+    - Play to get faster at typing
+    - A fun challenge to get a better score each time
+- #### Site owner Goals
+    - 
 
 ### Features:
 - #### Header
