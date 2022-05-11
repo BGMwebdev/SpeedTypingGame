@@ -26,14 +26,14 @@ startButton.addEventListener("keydown", function (event) {
 //  Input event, the wordCheck function will be activated
 wordInput.addEventListener('input', wordCheck);
 
-// // click event and keydown event to submit email
-// emailSubmit.addEventListener('click', submitEmail);
+// click event and keydown event to submit email
+emailSubmit.addEventListener('click', submitEmail);
 
-// emailSubmit.addEventListener("keydown", function (event) {
-//     if (event.key === "Enter") {
-//         submitEmail();
-//     }
-// });
+emailSubmit.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        submitEmail();
+    }
+});
 
 // click event for the return button, to return to start
 returnStart.addEventListener('click', Return);
@@ -167,24 +167,24 @@ function endGame() {
     sendScore.value = `${document.getElementById('score').innerText}`;
 }
 
-// /**
-//  * This is the email function addopted from emailjs and adjusted to fit this website. 
-//  */
-// (function () {
-//     emailjs.init('DGscXQC-1ku4fZMZ-');
-// })();
+/**
+ * This is the email function addopted from emailjs and adjusted to fit this website. 
+ */
+(function () {
+    emailjs.init('DGscXQC-1ku4fZMZ-');
+})();
 
-// window.onload = function () {
-//     document.getElementById('form').addEventListener('submit', function (event) {
-//         event.preventDefault();
-//         alert("Your score  has been sent!");
-//         emailjs.sendForm('service_6c68e72', 'contact_form', this).then(function () {
-//                 console.log('SUCCESS!');
-//             }, function (error) {
-//                 console.log('FAILED...', error);
-//             });
-//     });
-// };
+window.onload = function () {
+    document.getElementById('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert("Your score  has been sent!");
+        emailjs.sendForm('service_6c68e72', 'contact_form', this).then(function () {
+                console.log('SUCCESS!');
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+    });
+};
 
 /**
  * Go back to the beginning of the game
