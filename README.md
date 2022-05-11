@@ -60,6 +60,8 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 - [Content](#content)
 - [Media](#media)
 - [books](#books)
+
+[Acknowledgments](#acknowledgments)
 <hr>
 
 ### Project Goals
@@ -253,6 +255,7 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
 <hr>
 
 ### Features for the future
+- I would like to add a custom made 404 page. Due to time management, I wasn't able to provide one. 
 - For now, the rules collapsible needs to be closed manually. I would like to add the option to click anywhere, for example start game, and that it would close automatically. 
 - I would like to add feedback through sound. For example, every 5th word you would hear something like "great", "well done", "you're on fire".
 - It would be nice to have a certificate send to your email with an everage typing speed which you can use to show off you skills, on LinkedIn for example. 
@@ -398,3 +401,9 @@ The live link the deployed project can be found here: [Speed Typing Game](https:
 - #### books
     - [JavaScript & JQuery - Jon Duckett](https://www.amazon.ca/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647)
     <hr>
+
+### Acknowledgments
+A huge thanks to:
+- My dear partner Marleen who had my back since the beginning.
+- My 'old' mentor Antonio Rodriguez who guided me through the first steps.
+- My 'new' mentor Mo Shami who was very clear and direct about what needed to be done!
