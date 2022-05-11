@@ -101,11 +101,18 @@ For the design I choose to keep it minimalistic. A bright blue color with a brok
 <hr> 
 
 ### Wireframes
-    - Wireframe of the gameplay for mobile 
-![Wireframe mobile gameplay](assets/images/wireframe_mobile.png)
+<details>
+<summary>Wireframe of the gameplay for mobile</summary>
 
-    - Wireframe of the gameplay for desktop
+![Wireframe mobile gameplay](assets/images/wireframe_mobile.png)
+</details>
+
+<details>
+<summary>Wireframe of the gameplay for desktop</summary>
+
 ![Wireframe desktop gameplay](assets/images/wireframe_desktop.png)
+</details>
+
 <hr>
 
 ### Features:
