@@ -26,6 +26,10 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 - [User Stories](#user-stories)
 - [Site Owner Stories](#site-owner-stories)
 
+[Design choices](#design-choices)
+
+[Wireframes](#wireframes)
+
 [Features](#features)
 - [Header](#header)
 - [Start Game page](#start-game-page)
@@ -35,10 +39,6 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 - [Send email](#send-email)
 - [Email sent alert](#email-sent-alert)
 - [Email recieved](#email-recieved)
-
-[Wireframes](#wireframes)
-
-[Design choices](#design-choices)
 
 [Features for the future](#features-for-the-future)
 
@@ -68,6 +68,7 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
     - Create an interactive game that is challenging and fun.
     - Create a game that people would want to play more often.
     - Create a responsive website so people can play on different devices.
+<hr>
 
 ### User Experience
 - #### Target audience
@@ -93,6 +94,19 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 - #### Site Owner Stories
     7. I want people to play the game again and again.
     8. I want people to share their score with one another.
+<hr>
+
+### Design choices
+For the design I choose to keep it minimalistic. A bright blue color with a broken white contrasting color. For the Font I picked 'Chakra Petch', which I feel goes really well with the theme, speed typing. It has this 80/90's-game-vibe to it which takes me back to old sega racing games. The color green on the buttons asks for action. Green is go! which made it an obvious choice for me. I wanted to keep the game in the center of the page and not take more space, as the focus needs to be in the center, where the words will be presented. Also we read from left to right and top to bottom, I wanted to keep everything centered (including the question mark) so it would be easy to navigate with the eyes top to bottom, and not lead you astray.
+<hr> 
+
+### Wireframes
+    - Wireframe of the gameplay for mobile 
+![Wireframe mobile gameplay](assets/images/wireframe_mobile.png)
+
+    - Wireframe of the gameplay for desktop
+![Wireframe desktop gameplay](assets/images/wireframe_desktop.png)
+<hr>
 
 ### Features:
 - #### Header
@@ -158,17 +172,6 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 
     ![Email recieved](assets/images/email.png)
 <hr>
-
-### Wireframes
-    - Wireframe of the gameplay for mobile 
-![Wireframe mobile gameplay](assets/images/wireframe_mobile.png)
-
-    - Wireframe of the gameplay for desktop
-![Wireframe desktop gameplay](assets/images/wireframe_desktop.png)
-<hr>
-
-### Design choices
-For the design I choose to keep it minimalistic. A bright blue color with a broken white contrasting color. For the Font I picked 'Chakra Petch', which I feel go really well with the theme, speed typing. It has this 80/90's-game-vibe to it which takes me back to old sega racing games. The color green on the buttons asks for action. Green is go! which made it an obvious choice for me. I wanted to keep the game in the center of the page and not take more space, as the focus needs to be in the center, where the words will be presented. Also we read from left to right and top to bottom, I wanted to keep everything centered (including the question mark) so it would be easy to navigate with the eyes top to bottom, and not lead you astray.<hr> 
 
 ### Features for the future
 - For now, the rules collapsible needs to be closed manually. I would like to add the option to click anywhere, for example start game, and that it would close automatically. 
