@@ -24,6 +24,7 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 - [Target audience](#target-audience)
 - [User Requirements and Expectations](#user-requirements-and-expectations)
 - [User Stories](#user-stories)
+- [Site Owner Stories](#site-owner-stories)
 
 [Features](#features)
 - [Header](#header)
@@ -62,6 +63,7 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 - #### User Goals
     - Play to get faster at typing.
     - A fun challenge to get a better score each time.
+
 - #### Site owner Goals
     - Create an interactive game that is challenging and fun.
     - Create a game that people would want to play more often.
@@ -69,8 +71,27 @@ Welcome to the Speed Typing Game. A game with educational purpose, for anyone wh
 
 ### User Experience
 - #### Target audience
+    - People who want to become faster at typing either on mobile or keyboard.
+    - People who want to play a challenging game.
+    - People who want to play a quick and fun game.
+
 - #### User Requirements and Expectations
+    - The game's playability should be intuitive.
+    - The game's navigation should be accessible through keyboard and mouse use.
+    - People should be able to receive an email.
+    - People should be able to return to start and play again without refreshing the page or use of browser window.
+    - The game should look good on different sizes.
+
 - #### User Stories
+    - I would like to be challenged in the game.
+    - I would like to have feedback wether or not I type the word correctly.
+    - I want to be able to start typing directly, without having to click on the box first.
+    - I want to be able to have to scorre send to me.
+    - I want to get feedback wether or not the score was send.
+    - I want to be able to play again right after.
+
+- #### Site Owner Stories
+    - 
 
 ### Features:
 - #### Header
